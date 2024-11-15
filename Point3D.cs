@@ -28,7 +28,7 @@ namespace PointGeometrics
         {
             if (that is null)
             {
-                throw new NullReferenceException("The argument 3D point can not be null.");
+                throw new ArgumentNullException("The argument 3D point can not be null.");
             }
             return new Point3D(pX: this.X + that.X, pY: this.Y + that.Y, pZ: this.Z + that.Z); 
         }
@@ -39,7 +39,7 @@ namespace PointGeometrics
         {
             if (that is null)
             {
-                throw new NullReferenceException("The argument 3D point can not be null.");
+                throw new ArgumentNullException("The argument 3D point can not be null.");
             }
             return new Point3D(pX: this.X - that.X, pY: this.Y - that.Y, pZ: this.Z - that.Z);
         }
@@ -68,7 +68,7 @@ namespace PointGeometrics
         {
             if (that is null)
             {
-                throw new NullReferenceException("The argument 3D point can not be null.");
+                throw new ArgumentNullException("The argument 3D point can not be null.");
             }
 
             decimal XComponent = (this.X - that.X) * (this.X - that.X);
